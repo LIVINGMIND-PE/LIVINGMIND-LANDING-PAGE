@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="page-title">LIVING MIND — Tu camino hacia el conocimiento</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/index.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════════ -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+
+      <!-- LOGO: graduation cap icon (same as Académico card) -->
+      <a href="index.html" class="navbar__logo">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+          <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+        </svg>
+        LIVING MIND
+      </a>
+
+      <nav class="navbar__nav">
+        <a href="#find-tutors"     data-i18n="nav-find">Find Tutors</a>
+        <a href="#academic"        data-i18n="nav-academic">Academic</a>
+        <a href="#professional"    data-i18n="nav-professional">Professional</a>
+        <a href="#personal-growth" data-i18n="nav-growth">Personal Growth</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <!-- Language toggle -->
+        <button id="lang-toggle" class="btn btn-lang" aria-label="Switch language">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10A15.3 15.3 0 0 1 8 12 15.3 15.3 0 0 1 12 2z"/>
+            <path d="M2 12h20"/>
+          </svg>
+          <span id="lang-label">EN</span>
+        </button>
+
+        <a href="#" class="btn btn-outline" style="border-color:var(--color-gray-300);color:var(--color-gray-700);" data-i18n="btn-signin">Sign In</a>
+        <a href="#" class="btn btn-amber" style="background:var(--color-amber);color:#fff;border-color:var(--color-amber);" data-i18n="btn-booknow">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════
+         HERO — id for "Find Tutors" nav link
+    ════════════════════════════════════════════ -->
+    <section class="hero" id="find-tutors">
+      <div class="hero__bg"></div>
+      <div class="container hero__inner">
+
+        <p class="hero__eyebrow fade-up">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6L12 2z"/>
+          </svg>
+          <span data-i18n="hero-badge">Más de 500 tutores verificados</span>
+        </p>
+
+        <h1 class="hero__title fade-up" style="transition-delay:.08s" data-i18n="hero-title">
+          Tu camino hacia el conocimiento, sin límites.
+        </h1>
+
+        <p class="hero__subtitle fade-up" style="transition-delay:.16s" data-i18n="hero-subtitle">
+          Conecta con expertos apasionados en cualquier materia. Aprende a tu propio ritmo, desde donde quieras.
+        </p>
+
+        <div class="search-bar fade-up" style="transition-delay:.24s">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+          <input id="search-input" type="text" data-i18n-placeholder="search-placeholder"
+                 placeholder="¿Qué quieres aprender hoy? (ej. Cálculo, Guitarra, Liderazgo)" />
+          <button id="search-btn" class="btn btn-teal" data-i18n="btn-search">Buscar Tutor</button>
+        </div>
+
+        <div class="popular-tags fade-up" style="transition-delay:.32s">
+          <span data-i18n="popular-label">Populares:</span>
+          <span class="tag-pill" data-i18n="tag-math">Matemáticas</span>
+          <span class="tag-pill" data-i18n="tag-english">Inglés</span>
+          <span class="tag-pill" data-i18n="tag-code">Programación</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CATEGORIES  (3 sections with ids for nav)
+    ════════════════════════════════════════════ -->
+    <section class="categories" id="categories-section">
+      <div class="container">
+
+        <div class="categories__head">
+          <h2 class="section-title fade-up" data-i18n="cats-title">Explora nuestras categorías</h2>
+        </div>
+
+        <!-- ─── ACADEMIC ─────────────────────────── -->
+        <div class="category-block" id="academic">
+          <div class="category-block__header fade-up">
+            <div class="category-block__icon category-block__icon--teal">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+            </div>
+            <div>
+              <h3 data-i18n="cat-academic-title">Académico</h3>
+              <p data-i18n="cat-academic-desc">Domina matemáticas, ciencias, idiomas y más con tutores universitarios certificados.</p>
+            </div>
+          </div>
+          <div class="tutor-cards" data-stagger>
+            <article class="tutor-card fade-up">
+              <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&q=80" alt="Matemáticas" loading="lazy"/>
+              <div class="tutor-card__body">
+                <span class="tutor-card__subject" data-i18n="subj-math">Matemáticas</span>
+                <h4>Ana Rodríguez</h4>
+                <p data-i18n="tc-math-desc">PhD en Matemáticas · 5 años de experiencia docente</p>
+                <div class="tutor-card__meta">
+                  <span class="tutor-card__rating">★ 4.9</span>
+                  <span class="tutor-card__price">S/ 45/hr</span>
+                </div>
+              </div>
+            </article>
+            <article class="tutor-card fade-up">
+              <img src="https://images.unsplash.com/photo-1532094349884-543559196de1?w=400&q=80" alt="Ciencias" loading="lazy"/>
+              <div class="tutor-card__body">
+                <span class="tutor-card__subject" data-i18n="subj-science">Ciencias</span>
+                <h4>Carlos Vega</h4>
+                <p data-i18n="tc-science-desc">Ing. Químico · Especialista en Química y Física</p>
+                <div class="tutor-card__meta">
+                  <span class="tutor-card__rating">★ 4.8</span>
+                  <span class="tutor-card__price">S/ 40/hr</span>
+                </div>
+              </div>
+            </article>
+            <article class="tutor-card fade-up">
+              <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=400&q=80" alt="Idiomas" loading="lazy"/>
+              <div class="tutor-card__body">
+                <span class="tutor-card__subject" data-i18n="subj-languages">Idiomas</span>
+                <h4>María López</h4>
+                <p data-i18n="tc-lang-desc">Nativa en inglés · Certificada TEFL · 7 años</p>
+                <div class="tutor-card__meta">
+                  <span class="tutor-card__rating">★ 5.0</span>
+                  <span class="tutor-card__price">S/ 55/hr</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="category-block__cta fade-up">
+            <a href="#" class="btn btn-teal" data-i18n="cta-see-all-academic">Ver todos los tutores académicos</a>
+          </div>
+        </div>
+
+        <div class="category-divider"></div>
+
+        <!-- ─── PROFESSIONAL ──────────────────────── -->
+        <div class="category-block" id="professional">
+          <div class="category-block__header fade-up">
+            <div class="category-block__icon category-block__icon--blue">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2"/>
+                <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+              </svg>
+            </div>
+            <div>
+              <h3 data-i18n="cat-prof-title">Profesional</h3>
+              <p data-i18n="cat-prof-desc">Habilidades técnicas, liderazgo y preparación para el mundo laboral actual.</p>
+            </div>
+          </div>
+          <div class="tutor-cards" data-stagger>
+            <article class="tutor-card fade-up">
+              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&q=80" alt="Programación" loading="lazy"/>
+              <div class="tutor-card__body">
+                <span class="tutor-card__subject tutor-card__subject--blue" data-i18n="subj-programming">Programación</span>
+                <h4>Diego Torres</h4>
+                <p data-i18n="tc-prog-desc">Senior Engineer · React, Node.js, Python</p>
+                <div class="tutor-card__meta">
+                  <span class="tutor-card__rating">★ 4.9</span>
+                  <span class="tutor-card__price">S/ 70/hr</span>
+                </div>
+              </div>
+            </article>
+            <article class="tutor-card fade-up">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&q=80" alt="Liderazgo" loading="lazy"/>
+              <div class="tutor-card__body">
+                <span class="tutor-card__subject tutor-card__subject--blue" data-i18n="subj-leadership">Liderazgo</span>
+                <h4>Patricia Núñez</h4>
+                <p data-i18n="tc-lead-desc">MBA · Coach ejecutiva certificada · 10+ años</p>
+                <div class="tutor-card__meta">
+                  <span class="tutor-card__rating">★ 4.7</span>
+                  <span class="tutor-card__price">S/ 80/hr</span>
+                </div>
+              </div>
+            </article>
+            <article class="tutor-card fade-up">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80" alt="Marketing" loading="lazy"/>
+              <div class="tutor-card__body">
+                <span class="tutor-card__subject tutor-card__subject--blue" data-i18n="subj-marketing">Marketing Digital</span>
+                <h4>Luis Herrera</h4>
+                <p data-i18n="tc-mkt-desc">Google & Meta Certified · Performance & SEO</p>
+                <div class="tutor-card__meta">
+                  <span class="tutor-card__rating">★ 4.8</span>
+                  <span class="tutor-card__price">S/ 60/hr</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="category-block__cta fade-up">
+            <a href="#" class="btn btn-teal" data-i18n="cta-see-all-prof">Ver todos los tutores profesionales</a>
+          </div>
+        </div>
+
+        <div class="category-divider"></div>
+
+        <!-- ─── PERSONAL GROWTH ────────────────────── -->
+        <div class="category-block" id="personal-growth">
+          <div class="category-block__header fade-up">
+            <div class="category-block__icon category-block__icon--amber">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                <line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/>
+              </svg>
+            </div>
+            <div>
+              <h3 data-i18n="cat-growth-title">Desarrollo Personal</h3>
+              <p data-i18n="cat-growth-desc">Mindfulness, oratoria y habilidades blandas para crecer como persona.</p>
+            </div>
+          </div>
+          <div class="tutor-cards" data-stagger>
+            <article class="tutor-card fade-up">
+              <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&q=80" alt="Mindfulness" loading="lazy"/>
+              <div class="tutor-card__body">
+                <span class="tutor-card__subject tutor-card__subject--amber" data-i18n="subj-mindfulness">Mindfulness</span>
+                <h4>Sofía Mendoza</h4>
+                <p data-i18n="tc-mind-desc">Instructora certificada de meditación y yoga · 8 años</p>
+                <div class="tutor-card__meta">
+                  <span class="tutor-card__rating">★ 4.9</span>
+                  <span class="tutor-card__price">S/ 50/hr</span>
+                </div>
+              </div>
+            </article>
+            <article class="tutor-card fade-up">
+              <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&q=80" alt="Oratoria" loading="lazy"/>
+              <div class="tutor-card__body">
+                <span class="tutor-card__subject tutor-card__subject--amber" data-i18n="subj-public-speaking">Oratoria</span>
+                <h4>Roberto Salas</h4>
+                <p data-i18n="tc-ora-desc">Speaker internacional · TEDx Trainer</p>
+                <div class="tutor-card__meta">
+                  <span class="tutor-card__rating">★ 5.0</span>
+                  <span class="tutor-card__price">S/ 65/hr</span>
+                </div>
+              </div>
+            </article>
+            <article class="tutor-card fade-up">
+              <img src="https://images.unsplash.com/photo-1516534775068-ba3e7458af70?w=400&q=80" alt="Productividad" loading="lazy"/>
+              <div class="tutor-card__body">
+                <span class="tutor-card__subject tutor-card__subject--amber" data-i18n="subj-productivity">Productividad</span>
+                <h4>Valeria Cruz</h4>
+                <p data-i18n="tc-prod-desc">Coach de vida certificada · GTD & Deep Work</p>
+                <div class="tutor-card__meta">
+                  <span class="tutor-card__rating">★ 4.8</span>
+                  <span class="tutor-card__price">S/ 55/hr</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="category-block__cta fade-up">
+            <a href="#" class="btn btn-teal" data-i18n="cta-see-all-growth">Ver todos los tutores de desarrollo personal</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         HOW IT WORKS
+    ════════════════════════════════════════════ -->
+    <section class="how-it-works">
+      <div class="container">
+
+        <div class="how-it-works__head">
+          <h2 class="section-title fade-up" data-i18n="hiw-title">Cómo funciona</h2>
+          <p class="section-subtitle fade-up" style="transition-delay:.08s;margin-top:.75rem" data-i18n="hiw-subtitle">
+            Tu viaje de aprendizaje en tres sencillos pasos.
+          </p>
+        </div>
+
+        <div class="steps" data-stagger>
+
+          <div class="step fade-up">
+            <div class="step__icon step__icon--teal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+              </svg>
+            </div>
+            <h3 data-i18n="step1-title">Encuentra</h3>
+            <p data-i18n="step1-desc">Explora perfiles de tutores verificados, lee reseñas y elige al experto ideal para tus objetivos.</p>
+          </div>
+
+          <div class="step fade-up">
+            <div class="step__icon step__icon--amber">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 data-i18n="step2-title">Conecta</h3>
+            <p data-i18n="step2-desc">Reserva una sesión que se adapte a tu horario y comunícate directamente a través de nuestra plataforma.</p>
+          </div>
+
+          <div class="step fade-up">
+            <div class="step__icon step__icon--purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10A15.3 15.3 0 0 1 8 12a15.3 15.3 0 0 1 4-10z"/>
+                <path d="M2 12h20"/>
+              </svg>
+            </div>
+            <h3 data-i18n="step3-title">Aprende</h3>
+            <p data-i18n="step3-desc">Únete a la videollamada, accede a recursos compartidos y alcanza tu máximo potencial.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CTA BANNER
+    ════════════════════════════════════════════ -->
+    <section class="cta-banner">
+      <div class="container cta-banner__inner fade-up">
+        <h2 data-i18n="cta-title">Únete a la revolución del aprendizaje</h2>
+        <p data-i18n="cta-desc">Ya sea que busques expandir tu mente o compartir tu experiencia, Living Mind es tu plataforma.</p>
+        <div class="cta-banner__btns">
+          <a href="#find-tutors" class="btn btn-primary" data-i18n="cta-start">Empezar a Aprender</a>
+          <a href="tutor.html"   class="btn btn-outline-white" data-i18n="cta-tutor">Convertirse en Tutor</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="index.html" class="navbar__logo">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+            LIVING MIND
+          </a>
+          <p data-i18n="footer-brand-desc">Empowering human connection through knowledge.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4 data-i18n="footer-platform">Plataforma</h4>
+          <ul>
+            <li><a href="#" data-i18n="footer-about">About Us</a></li>
+            <li><a href="tutor.html" data-i18n="footer-become">Become a Tutor</a></li>
+            <li><a href="#" data-i18n="footer-support">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 data-i18n="footer-legal">Legal</h4>
+          <ul>
+            <li><a href="#" data-i18n="footer-privacy">Privacy Policy</a></li>
+            <li><a href="#" data-i18n="footer-terms">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p data-i18n="footer-copy">© 2026 LIVING MIND. Empowering knowledge worldwide.</p>
+        <div class="footer__help">
+          <a href="#" data-i18n="footer-help">Help Center</a>
+          <a href="tutor.html#contact" data-i18n="footer-contact">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/i18n.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+</html>

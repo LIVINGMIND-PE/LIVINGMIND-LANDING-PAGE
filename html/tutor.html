@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIVING MIND — Conviértete en Tutor</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/tutor.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════════ -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+          <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+        </svg>
+        LIVING MIND
+      </a>
+
+      <nav class="navbar__nav">
+        <a href="#benefits"  data-i18n="tnav-benefits">Benefits</a>
+        <a href="#steps"     data-i18n="tnav-subjects">Subjects</a>
+        <a href="#steps"     data-i18n="tnav-pricing">Pricing</a>
+        <a href="#contact"   data-i18n="tnav-faq">FAQ</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <!-- Language toggle -->
+        <button id="lang-toggle" class="btn btn-lang" aria-label="Switch language">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10A15.3 15.3 0 0 1 8 12 15.3 15.3 0 0 1 12 2z"/>
+            <path d="M2 12h20"/>
+          </svg>
+          <span id="lang-label">EN</span>
+        </button>
+        <a href="index.html" class="btn btn-outline" style="border-color:var(--color-gray-300);color:var(--color-gray-700);" data-i18n="btn-back">← Volver</a>
+        <a href="#contact" class="btn btn-teal" data-i18n="btn-apply">Apply Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════
+         HERO
+    ════════════════════════════════════════════ -->
+    <section style="background:var(--color-white);padding-top:var(--space-md)">
+      <div class="container">
+        <div class="tutor-hero">
+
+          <div class="tutor-hero__content">
+            <span class="tutor-hero__badge fade-up">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+              Únete a nuestra comunidad de expertos
+            </span>
+
+            <h1 class="tutor-hero__title fade-up" style="transition-delay:.08s">
+              Comparte tu conocimiento con el mundo.
+            </h1>
+
+            <p class="tutor-hero__desc fade-up" style="transition-delay:.16s">
+              Conviértete en tutor en LIVING MIND y ayuda a miles de estudiantes a alcanzar sus metas mientras construyes tu propia carrera enseñando lo que amas.
+            </p>
+
+            <div class="tutor-hero__actions fade-up" style="transition-delay:.24s">
+              <a href="#contact" class="btn btn-primary">Convertirse en Tutor</a>
+              <a href="#steps"   class="btn btn-outline">Ver cómo funciona</a>
+            </div>
+          </div>
+
+          <div class="tutor-hero__img fade-up" style="transition-delay:.32s">
+            <img
+              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80"
+              alt="Tutora sonriendo en reunión"
+              loading="eager" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         BENEFITS
+    ════════════════════════════════════════════ -->
+    <section class="benefits" id="benefits">
+      <div class="container">
+
+        <div class="benefits__head">
+          <h2 class="section-title fade-up">Por qué enseñar en LIVING MIND</h2>
+          <p class="section-subtitle fade-up" style="margin-top:.75rem;transition-delay:.08s">
+            Diseñamos nuestra plataforma pensando en tu éxito. Disfruta de herramientas profesionales que te permiten enfocarte en lo que mejor haces: enseñar.
+          </p>
+        </div>
+
+        <div class="benefits__grid" data-stagger>
+
+          <article class="benefit-card fade-up">
+            <div class="benefit-card__icon benefit-card__icon--teal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3>Horario Flexible</h3>
+            <p>Tú decides cuándo y cuánto trabajar. Gestiona tu disponibilidad con nuestro calendario inteligente y sincronízalo con tu vida personal.</p>
+          </article>
+
+          <article class="benefit-card fade-up">
+            <div class="benefit-card__icon benefit-card__icon--amber">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10A15.3 15.3 0 0 1 8 12a15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <h3>Alcance Global</h3>
+            <p>Conecta con estudiantes de todo el mundo. Rompe las barreras geográficas y expande tu impacto educativo a nivel internacional.</p>
+          </article>
+
+          <article class="benefit-card fade-up">
+            <div class="benefit-card__icon benefit-card__icon--purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Pagos Seguros</h3>
+            <p>Concéntrate en tus clases, nosotros nos encargamos del resto. Recibe tus pagos de forma puntual y segura a través de nuestra plataforma protegida.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         STEPS
+    ════════════════════════════════════════════ -->
+    <section class="tutor-steps" id="steps">
+      <div class="container">
+        <div class="tutor-steps__inner">
+
+          <div class="tutor-steps__content">
+            <h2 class="fade-up">Comienza tu viaje en 3 simples pasos</h2>
+            <p class="fade-up" style="transition-delay:.08s">
+              Nuestro proceso de integración es rápido y transparente, diseñado para llevarte a tu primera clase lo antes posible.
+            </p>
+
+            <ol class="tutor-step-list" data-stagger>
+
+              <li class="tutor-step fade-up">
+                <span class="tutor-step__num tutor-step__num--teal">1</span>
+                <div>
+                  <h4>Crea tu perfil</h4>
+                  <p>Sube tu foto, describe tu experiencia, establece tus tarifas y elige las materias en las que eres experto.</p>
+                </div>
+              </li>
+
+              <li class="tutor-step fade-up">
+                <span class="tutor-step__num tutor-step__num--gray">2</span>
+                <div>
+                  <h4>Verificación rápida</h4>
+                  <p>Nuestro equipo revisará tu perfil y credenciales para asegurar la calidad de la comunidad. Recibirás respuesta en 24 horas.</p>
+                </div>
+              </li>
+
+              <li class="tutor-step fade-up">
+                <span class="tutor-step__num tutor-step__num--amber">3</span>
+                <div>
+                  <h4>¡Empieza a enseñar!</h4>
+                  <p>Una vez aprobado, tu perfil será visible para miles de estudiantes. Acepta reservas y comienza a impartir clases en nuestra aula virtual.</p>
+                </div>
+              </li>
+
+            </ol>
+          </div>
+
+          <div class="tutor-steps__visual fade-up" style="transition-delay:.2s">
+            <div class="steps-mockup">
+              <img
+                src="https://images.unsplash.com/photo-1588702547919-26089e690ecc?w=700&q=80"
+                alt="Laptop con plataforma de tutorías"
+                loading="lazy" />
+            </div>
+            <div class="steps-mockup__badge">
+              <span class="dot"></span>
+              Nueva Solicitud de Clase — Matemáticas Avanzadas
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CONTACT US
+    ════════════════════════════════════════════ -->
+    <section class="contact" id="contact">
+      <div class="container">
+
+        <div style="text-align:center;margin-bottom:var(--space-xl)">
+          <h2 class="section-title fade-up">Contáctanos</h2>
+          <p class="section-subtitle fade-up" style="margin-top:.75rem;transition-delay:.08s">
+            ¿Tienes preguntas sobre convertirte en tutor? Estamos aquí para ayudarte en cada paso del proceso.
+          </p>
+        </div>
+
+        <div class="contact__inner">
+
+          <!-- Info column -->
+          <div class="contact__info fade-up">
+            <p>
+              Ya sea que tengas dudas sobre el proceso de verificación, las tarifas, o simplemente quieras saber más sobre la comunidad, nuestro equipo responde en menos de 24 horas.
+            </p>
+
+            <ul class="contact__detail-list">
+
+              <li class="contact__detail">
+                <div class="contact__detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="contact__detail-text">
+                  <strong>Email</strong>
+                  <span>tutores@livingmind.com</span>
+                </div>
+              </li>
+
+              <li class="contact__detail">
+                <div class="contact__detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91A16 16 0 0 0 14.09 16l.94-1.09a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="contact__detail-text">
+                  <strong>Teléfono / WhatsApp</strong>
+                  <span>+51 900 123 456</span>
+                </div>
+              </li>
+
+              <li class="contact__detail">
+                <div class="contact__detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div class="contact__detail-text">
+                  <strong>Horario de atención</strong>
+                  <span>Lun–Vie, 9:00 AM – 6:00 PM (PET)</span>
+                </div>
+              </li>
+
+              <li class="contact__detail">
+                <div class="contact__detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="contact__detail-text">
+                  <strong>Ubicación</strong>
+                  <span>Lima, Perú (operamos globalmente)</span>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+          <!-- Form column -->
+          <div class="contact__form-wrap fade-up" style="transition-delay:.15s">
+
+            <div id="form-wrap">
+              <h3>Envíanos un mensaje</h3>
+
+              <form id="contact-form" novalidate>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" placeholder="Juan García" autocomplete="name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" placeholder="juan@email.com" autocomplete="email" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Tema</label>
+                  <select id="subject">
+                    <option value="">Selecciona un tema…</option>
+                    <option value="tutor-apply">Quiero ser tutor</option>
+                    <option value="verification">Proceso de verificación</option>
+                    <option value="pricing">Tarifas y pagos</option>
+                    <option value="technical">Soporte técnico</option>
+                    <option value="other">Otro</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Mensaje</label>
+                  <textarea id="message" placeholder="Cuéntanos cómo podemos ayudarte…"></textarea>
+                </div>
+
+                <div class="form-submit-wrap">
+                  <button type="submit" class="btn btn-teal">Enviar Mensaje</button>
+                </div>
+                <p class="form-note">Al enviar este formulario aceptas nuestra <a href="#" style="color:var(--color-teal);text-decoration:underline">Política de Privacidad</a>.</p>
+
+              </form>
+            </div>
+
+            <!-- Success state (hidden by default) -->
+            <div id="form-success" class="form-success">
+              <div class="form-success__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6 9 17l-5-5"/>
+                </svg>
+              </div>
+              <h4>¡Mensaje enviado!</h4>
+              <p>Gracias por contactarnos. Te responderemos en menos de 24 horas.</p>
+              <button id="form-reset-btn" class="btn btn-outline" style="margin-top:var(--space-md)">
+                Enviar otro mensaje
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="index.html" class="navbar__logo">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+            LIVING MIND
+          </a>
+          <p data-i18n="footer-brand-desc">Empowering knowledge worldwide.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4 data-i18n="footer-platform">Plataforma</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="footer-home">Inicio</a></li>
+            <li><a href="#" data-i18n="footer-about">About Us</a></li>
+            <li><a href="#" data-i18n="footer-support">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 data-i18n="footer-legal">Legal</h4>
+          <ul>
+            <li><a href="#" data-i18n="footer-privacy">Privacy Policy</a></li>
+            <li><a href="#" data-i18n="footer-terms">Terms of Service</a></li>
+            <li><a href="#contact" data-i18n="footer-contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p data-i18n="footer-copy">© 2026 LIVING MIND. Empowering knowledge worldwide.</p>
+        <div class="footer__help">
+          <a href="#" data-i18n="footer-help">Help Center</a>
+          <a href="#contact" data-i18n="footer-contact">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/i18n.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/tutor.js"></script>
+</body>
+</html>
